@@ -1,0 +1,12 @@
+<ag-grid-angular
+   #agGrid
+    style="width: 100%; height: 500px;"
+    class="ag-theme-alpine"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    rowSelection="multiple"
+>
+</ag-grid-angular>
+
+<button (click)="getSelectedRows()">Get Sum of Selected Rows(Number1)</button>
+{{ sum }}
